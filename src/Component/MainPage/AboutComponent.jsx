@@ -25,7 +25,7 @@ const AboutComponent = () => {
   ];
 
   return (
-    <section className="relative bg-[#030014] pb-32 pt-10 px-4 text-white">
+    <section id="about" className="relative bg-[#030014] pb-32 pt-10 px-4 text-white">
       <div className="mx-auto max-w-6xl">
         
         <div className="mb-20 text-center">
@@ -37,28 +37,29 @@ const AboutComponent = () => {
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           
-          {/* Left Side: Card Giới thiệu chính */}
+          {/* Left Side: Giới thiệu bản thân bản nâng cấp */}
           <div className="group relative rounded-3xl bg-white/[0.03] p-10 border border-white/10 transition-all duration-500 overflow-hidden
             hover:bg-white/[0.06] hover:border-purple-500/50 hover:shadow-[0_0_40px_rgba(168,85,247,0.2)]">
             
-            {/* Lớp Overlay phát sáng chạy ngầm */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-purple-500/20 to-blue-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
             <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
               <p>
-                I'm a passionate <span className="text-white font-medium group-hover:text-purple-300 transition-colors">front-end developer</span> with a love for creating beautiful, functional, and user-friendly websites. 
+                I am <span className="text-white font-semibold">Thái Gia Long</span>, a passionate <span className="text-purple-400 font-medium">Fullstack Developer Intern</span> currently pursuing a Bachelor of Software Engineering at <span className="text-white">FPT University</span>. 
               </p>
               <p>
-                My approach combines technical excellence with creative problem-solving, ensuring every project not only looks great but performs exceptionally.
+                With a solid foundation in <span className="text-blue-400">Java (IBM Certified)</span> and modern web technologies, I specialize in building <span className="italic">scalable</span> and <span className="italic">high-performance</span> digital solutions.
+              </p>
+              <p>
+                Beyond coding, I am a multilingual enthusiast with a <span className="text-white border-b border-blue-500/50">B2 English level</span> and am currently aiming for <span className="text-white border-b border-purple-500/50">JLPT N2/N3</span>. I strive to become a Bridge Software Engineer connecting technology with global business needs.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-6">
-                {/* Badges cũng sẽ sáng lên khi hover card cha */}
                 <div className="rounded-xl bg-purple-500/10 border border-purple-500/20 px-5 py-2.5 text-sm font-medium text-purple-300 group-hover:bg-purple-500/20 group-hover:border-purple-500/40 transition-all">
-                  5+ Years Experience
+                  SE Student @ FPTU
                 </div>
                 <div className="rounded-xl bg-blue-500/10 border border-blue-500/20 px-5 py-2.5 text-sm font-medium text-blue-300 group-hover:bg-blue-500/20 group-hover:border-blue-500/40 transition-all">
-                  50+ Projects
+                  IBM Java Certified
                 </div>
               </div>
             </div>
@@ -72,7 +73,6 @@ const AboutComponent = () => {
                 className="rounded-2xl border border-white/5 bg-white/[0.03] p-8 transition-all duration-300 group 
                   hover:bg-white/[0.08] hover:border-indigo-500/40 hover:shadow-[0_0_30px_rgba(99,102,241,0.2)] hover:-translate-y-1"
               >
-                {/* Icon sáng rực rỡ hơn */}
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-500/10 text-indigo-400 
                   group-hover:scale-110 group-hover:bg-indigo-500/30 group-hover:text-indigo-200 group-hover:shadow-[0_0_15px_rgba(99,102,241,0.5)] transition-all">
                   <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
@@ -87,6 +87,7 @@ const AboutComponent = () => {
 
         </div>
       </div>
+      {/* Lớp phủ để kết nối mượt với phần Skills bên dưới */}
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#05011d] to-transparent z-10"></div>
     </section>
   )

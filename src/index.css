@@ -2,3 +2,17 @@
 @import "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 @source "../node_modules/flowbite-react/dist/esm/**/*.mjs";
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(150%) skewX(-20deg);
+  }
+}
+
+/* Đảm bảo class này được nhận diện */
+.animate-shimmer {
+  animation: shimmer 1.5s infinite;
+}

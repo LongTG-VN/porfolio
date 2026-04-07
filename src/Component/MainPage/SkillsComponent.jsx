@@ -15,9 +15,9 @@ const SkillsComponent = () => {
       category: "Tools & Others",
       skills: [
         { name: "Git", level: 85 },
-        { name: "Figma", level: 80 },
+        { name: "VS Code", level: 80 },
         { name: "REST APIs", level: 90 },
-        { name: "Performance", level: 87 },
+        { name: "Netbeans", level: 87 },
       ]
     }
   ];
