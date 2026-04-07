@@ -48,7 +48,7 @@ const HeroComponent = () => {
 
              <div className="mt-12">
     <a 
-        href="https://m.me/your.facebook.username" // THAY TÊN USERNAME FACEBOOK CỦA BẠN VÀO ĐÂY
+        href="https://www.facebook.com/long.thaigia.37/" // THAY TÊN USERNAME FACEBOOK CỦA BẠN VÀO ĐÂY
         target="_blank" 
         rel="noopener noreferrer"
         className="block" // Đảm bảo vùng click bao phủ toàn bộ button
