@@ -1,6 +1,6 @@
 import React from 'react';
 import { BookOpen, Clock, Users, Zap } from 'lucide-react';
-
+import { NavLink } from 'react-router-dom';
 const languages = [
   {
     id: 'jp',
@@ -134,11 +134,11 @@ const LanguageComponent = () => {
               </div>
 
               {/* CTA Button: Super Glow */}
-              <button className={`cursor-pointer w-full group/btn relative py-5 rounded-[1.8rem] bg-gradient-to-r ${lang.color} text-sm font-black uppercase tracking-widest text-white transition-all active:scale-95 flex items-center justify-center gap-3 hover:brightness-110 shadow-lg`}>
+              < NavLink to={lang.id} className={`cursor-pointer w-full group/btn relative py-5 rounded-[1.8rem] bg-gradient-to-r ${lang.color} text-sm font-black uppercase tracking-widest text-white transition-all active:scale-95 flex items-center justify-center gap-3 hover:brightness-110 shadow-lg`}>
                 <Zap size={18} className="fill-current" />
                 Start Learning
                 <div className="absolute inset-0 bg-white/10 opacity-0 group-hover/btn:opacity-100 transition-opacity rounded-[1.8rem]"></div>
-              </button>
+              </ NavLink >
             </div>
           ))}
         </div>
