@@ -49,15 +49,32 @@ const ContactComponent = () => {
           </div>
 
           {/* Contact Button */}
-          <a 
-            href="mailto:hello@example.com" 
-            className="inline-flex items-center gap-3 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 px-8 py-4 font-bold text-white hover:scale-105 active:scale-95 transition-all shadow-lg shadow-purple-500/25"
-          >
-            <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-           Longtg.ce191181@gmail.com
-          </a>
+<a 
+  href="mailto:Longtg.ce191181@gmail.com" 
+  className="
+    /* Layout & Alignment */
+    inline-flex items-center gap-2 sm:gap-3 
+    rounded-xl sm:rounded-2xl 
+    
+    /* Sizing (Responsive Padding & Text) */
+    px-5 py-3 sm:px-8 sm:py-4 
+    text-sm sm:text-base font-bold text-white 
+    
+    /* Visuals */
+    bg-gradient-to-r from-purple-600 to-blue-600 
+    shadow-lg shadow-purple-500/25 
+    
+    /* Interactions */
+    transition-all duration-200
+    hover:scale-105 active:scale-95 
+    break-all sm:break-normal
+  "
+>
+  <svg className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+  </svg>
+  <span className="truncate">Longtg.ce191181@gmail.com</span>
+</a>
         </div>
 
         {/* Footer Text */}
